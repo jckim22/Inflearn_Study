@@ -27,6 +27,7 @@ public class ControllerV4HandlerAdapter implements MyHandlerAdapter {
 
         String viewName = controller.process(paramMap, model);
 
+        //Modelview로 만들어주면서 220v를 110v로 사용할 수 있는 어댑터 역할을 해줌
         ModelView mv = new ModelView(viewName);
         mv.setModel(model);
 
