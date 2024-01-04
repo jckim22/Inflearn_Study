@@ -52,5 +52,4 @@ public class MemberRepositoryV5 implements MemberRepository {
             return member;
         };
     }
-
 }
