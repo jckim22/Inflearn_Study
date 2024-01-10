@@ -18,11 +18,11 @@
 
     <select id="findById" resultType="Item">
         select id, item_name, price, quantity
-        form item
+        from item
         where id = #{id}
     </select>
 
-    <select id="findAll">
+    <select id="findAll" resultType="Item">
         select id, item_name, price, quantity
         from item
         <where>
@@ -34,4 +34,5 @@
             </if>
         </where>
     </select>
+
 </mapper>
