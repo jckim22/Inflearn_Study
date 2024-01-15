@@ -35,7 +35,7 @@ public class JpaItemRepositoryV2 implements ItemRepository {
     @Override
     public Optional<Item> findById(Long id) {
         return repository.findById(id);
-    }
+    }₩  
 
     @Override
     public List<Item> findAll(ItemSearchCond cond) {
