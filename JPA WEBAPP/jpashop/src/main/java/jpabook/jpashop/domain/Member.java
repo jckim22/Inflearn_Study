@@ -20,6 +20,6 @@ public class Member {
     @Embedded
     private Address address;
 
-    @OneToMany(mappedBy = "member") //order Tavle의 member에 매핑될거야 라고 하는 읽기전용 개체
+    @OneToMany(mappedBy = "member") //order Table의 member에 매핑될거야 라고 하는 읽기전용 개체
     private List<Order> orders = new ArrayList<>();
 }
